@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
 
-import { Header } from "../shared/Header";
+import { Header } from "../shared/header";
 import { Footer } from "../shared/Footer";
 
 export function RootLayout() {

@@ -10,32 +10,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { CartItems } from "./CartItems";
 import { NoCartItem } from "./NoCartItem";
 import { CartTrigger } from "./CartTrigger";
-import testImg from "/assets/iphone 14 pro max.jpg";
-import testImg2 from "/assets/beats headphones.jpg";
-
-const testProducts = [
-  {
-    name: "iPhone 14 Pro Max",
-    slug: "iphone-14-pro-max",
-    image: testImg,
-    price: 1299.99,
-    quantity: 1,
-  },
-  {
-    name: "Beats Headphones",
-    slug: "beats-headphones",
-    image: testImg2,
-    price: 73.45,
-    quantity: 3,
-  },
-  {
-    name: "iPhone 14 Pro Max",
-    slug: "iphone-14-pro-max",
-    image: testImg,
-    price: 1299.99,
-    quantity: 1,
-  },
-];
+import { testProducts } from "@/constants/testProducts";
 
 export function CartWidget() {
   const isMobile = useIsMobile();

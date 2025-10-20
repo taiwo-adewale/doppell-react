@@ -4,14 +4,7 @@ import { X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
-
-type Product = {
-  name: string;
-  slug: string;
-  image: string;
-  price: number;
-  quantity: number;
-};
+import type { Product } from "@/constants/testProducts";
 
 type CartItemsProps = {
   products: Product[];

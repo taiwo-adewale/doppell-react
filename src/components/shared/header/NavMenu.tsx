@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Search } from "lucide-react";
 
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -49,7 +50,10 @@ export function NavMenu() {
               </Fragment>
             ) : (
               <NavigationMenuLink
-                className={navigationMenuTriggerStyle()}
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "data-[active=true]:focus:bg-transparent data-[active=true]:hover:bg-transparent data-[active=true]:bg-transparent hover:bg-transparent focus:bg-transparent"
+                )}
                 asChild
               >
                 <NavLink to={navItem.href} className={"uppercase"}>

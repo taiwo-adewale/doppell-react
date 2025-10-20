@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 
 export function Header() {
   return (
-    <header className="sticky top-0 bg-white/75 backdrop-blur-sm shadow-lg">
+    <header className="sticky top-0 bg-white/75 backdrop-blur-sm shadow-lg z-10">
       <div className="container h-20 flex justify-between items-center gap-8">
         <Link to="/" className="w-40 shrink-0">
           <img src={doppellLogo} alt="Doppell Logo" className="w-full" />
